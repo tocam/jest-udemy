@@ -14,7 +14,7 @@ class JottoMain extends Component{
         return(
             <div className={'jotto-main-container'}>
                 <h1>Welcome to Jotto!</h1>
-                {success && <Congrats/>}
+               <Congrats success={success}/>
             </div>
       )
   }

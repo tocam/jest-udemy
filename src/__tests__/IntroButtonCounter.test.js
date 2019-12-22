@@ -1,13 +1,13 @@
 import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import EnzymeAdapter from 'enzyme-adapter-react-16';
-import { findByTestAttribute } from "./_utils/test.utils"
+import { findByTestAttribute } from "../__utils/test.utils"
 import IntroButtonCounter from "../components/intro-button-counter/intro-button-counter"
 
 Enzyme.configure({adapter : new EnzymeAdapter()});
 
 /**
- * A Factory function to create a ShalloWrapper for the App Componnent*
+ * A Factory function to create a ShallowWrapper for the App Component*
  * @function setUp
  * @param {object} props - Component props specific to this setUp.
  * @param {object} state - Initial State
