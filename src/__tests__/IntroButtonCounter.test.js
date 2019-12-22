@@ -1,7 +1,7 @@
 import React from 'react';
 import Enzyme, {shallow} from 'enzyme';
 import EnzymeAdapter from 'enzyme-adapter-react-16';
-import App from "../App";
+import IntroButtonCounter from "../components/intro-button-counter/intro-button-counter"
 
 Enzyme.configure({adapter : new EnzymeAdapter()});
 
@@ -14,7 +14,7 @@ Enzyme.configure({adapter : new EnzymeAdapter()});
  */
 
 const setUp = (props = {} , state = null) => {
-    const wrapper = shallow(<App{...props}/>);
+    const wrapper = shallow(<IntroButtonCounter{...props}/>);
     if(state){
         wrapper.setState(state);
     }
@@ -36,10 +36,10 @@ const findByTestAttr =(wrapper , val)=>{
 
 it('renders without crashing ' , ()=>{
     const wrapper = setUp();
-    const appComponent = wrapper.find("[data-test='component-app']");
+    const appComponent = wrapper.find("[data-test='component-intro-button-counter']");
     expect(appComponent.length).toBe(1);
     //ie, there should be an html el that contains 1 div with a data-test
-    //attr equal to component-app
+    //attr equal to component-intro-button-counter
 });
 
 it('renders increment button' ,()=>{

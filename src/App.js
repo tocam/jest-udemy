@@ -1,29 +1,37 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
-class App extends Component{
-    constructor(props){
-        super(props);
-        this.state={
-            counter : 0
-        }
-    }
-  render(){
-        const {counter} =this.state;
-        return (
-            <div data-test="component-app" >
-                <h1 data-test="counter-display">The Counter is : {this.state.counter}</h1>
-                <h1>App</h1>
 
-                <button type={'button'}
-                      data-test="inc-button"
-                      onClick={() => this.setState({counter : counter + 1})}
-                >
-                    Increment
-                </button>
-          </div>
-      );
-  }
-}
+import IntroButtonContainer from "./components/intro-button-counter/intro-button-counter"
+
+const App =()=>{
+    return (
+        <React.Fragment>
+            <Router>
+
+                <nav>
+                    <p>Select an App :</p>
+                    <ul>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/intro-counter-app">Intro-Counter_app</Link></li>
+                        <li><Link to="/jotto-word-game">Jotto - Word Game</Link></li>
+                    </ul>
+                </nav>
+
+                <Switch>
+                    <Route path={'/intro-counter-app'}>
+                        <IntroButtonContainer/>
+                    </Route>
+                </Switch>
+            </Router>
+        </React.Fragment>
+    );
+};
 
 export default App;
