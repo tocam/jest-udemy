@@ -7,8 +7,8 @@ import {
     Link
 } from "react-router-dom";
 
-
-import IntroButtonContainer from "./components/intro-button-counter/intro-button-counter"
+import IntroButtonContainer from "./components/intro-button-counter/intro-button-counter";
+import JottoMain from "./components/jotto-word-guess-game/JottoMain"
 
 const App =()=>{
     return (
@@ -27,6 +27,9 @@ const App =()=>{
                 <Switch>
                     <Route path={'/intro-counter-app'}>
                         <IntroButtonContainer/>
+                    </Route>
+                    <Route path={'/jotto-word-game'}>
+                        <JottoMain/>
                     </Route>
                 </Switch>
             </Router>
