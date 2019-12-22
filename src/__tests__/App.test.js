@@ -9,12 +9,16 @@ Enzyme.configure({adapter : new EnzymeAdapter()});
  * A Factory function to create a ShalloWrapper for the App Componnent*
  * @function setUp
  * @param {object} props - Component props specific to this setUp.
- * @param {any} state - Initial State
+ * @param {object} state - Initial State
  * @returns {ShallowWrapper} //this is just an enzyme class
  */
 
 const setUp = (props = {} , state = null) => {
-    return shallow(<App{...props}/>)
+    const wrapper = shallow(<App{...props}/>);
+    if(state){
+        wrapper.setState(state);
+    }
+    return wrapper
 };
 
 /**
@@ -59,5 +63,18 @@ it('has counter that starts at 0' ,()=>{
 });
 
 it('increments the count when the button is clicked.' ,()=>{
+    const counter = 7;
+    const wrapper = setUp(null , {counter : counter}); //no props , and we plan to set the counter to 7
 
+    //find button and click
+    const button = findByTestAttr(wrapper , 'inc-button');
+    button.simulate('click');
+
+    //find display and test the value
+    const counterDisplay = findByTestAttr(wrapper , 'counter-display');
+
+    expect(counterDisplay.text()).toContain(counter +1 ) //text is a shallow wrapper method that returns a string of the text CONTAINED in the element
+    //NOTE : use toContain(counter + 1) so that if I change any of the text that surrounds the rendered counter value, the test wont break (only testing for that counter value)
+    // make sure that in 'counter-display html el contains {this.state.counter}'
+    // also make sure that the button rendered actually has an onclick event for this test to pass
 });
