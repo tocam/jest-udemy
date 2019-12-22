@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36109888-72a2-4c74-9629-af7064ed803b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-    </list>
+    <list default="true" id="36109888-72a2-4c74-9629-af7064ed803b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -70,14 +67,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/__tests__/JottoWordGuessGame/Congrats.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="202">
               <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/__tests__/_utils/test.utils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -118,6 +124,7 @@
         <option value="$PROJECT_DIR$/src/components/jotto-word-guess-game/Congrats.js" />
         <option value="$PROJECT_DIR$/src/components/jotto-word-guess-game/JottoMain.js" />
         <option value="$PROJECT_DIR$/src/__tests__/JottoWordGuessGame/Congrats.test.js" />
+        <option value="$PROJECT_DIR$/src/__tests__/_utils/test.utils.js" />
       </list>
     </option>
   </component>
@@ -153,20 +160,7 @@
               <item name="jest-udemy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="__tests__" type="462c0819:PsiDirectoryNode" />
-              <item name="JottoWordGuessGame" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jest-udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jest-udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jest-udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jest-udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="jotto-word-guess-game" type="462c0819:PsiDirectoryNode" />
+              <item name="_utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -250,7 +244,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576961826604</updated>
-      <workItem from="1576961828243" duration="14751000" />
+      <workItem from="1576961828243" duration="15326000" />
     </task>
     <servers />
   </component>
@@ -287,7 +281,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14751000" />
+    <option name="totallyTimeSpent" value="15326000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -304,11 +298,11 @@
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2988782" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2988782" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.34517047" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.34517047" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -412,11 +406,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/JottoWordGuessGame/Congrats.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="202">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/_utils/test.utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
